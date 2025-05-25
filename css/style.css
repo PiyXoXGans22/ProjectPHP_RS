@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 2rem 3rem;
+  width: 520px;
+  height: 420px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.card h1 {
+  color: #004d40;
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+
+}
+
+form table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+form td:first-child {
+  padding-right: 10px;
+  font-weight: 600;
+  color: #004d40;
+  font-size: 0.9rem;
+  vertical-align: middle;
+  width: 130px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.8px solid #00796b;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #004d40;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 77, 64, 0.3);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #00796b;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #004d40;
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+    padding: 1.5rem 2rem;
+  }
+  form td:first-child {
+    font-size: 0.85rem;
+    width: auto;
+    padding-right: 8px;
+  }
+}
+.forgot {
+    display: flex;
+    justify-content: flex-end;
+    color: #004d40;
+    font-size: 0.7rem;
+    font-weight: 700;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .input-group {
+    position: relative;
+  }
+  
+  .input-group i {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #00796b;
+    font-size: 1rem;
+  }
+  
+  .input-group input {
+    padding-left: 36px; /* beri ruang agar ikon tidak menindih teks */
+  }
+  
+  
